@@ -53,6 +53,4 @@ In the event of a critical incident, this setup may necessitate a passive observ
 
 Contributions are welcome! Please feel free to submit a pull request or open an issue if you find any bugs or want to propose enhancements.
 
-## License
 
-This project is licensed under the [MIT License](LICENSE).
