@@ -2,6 +2,7 @@
 
 ![Project Image](/Users/dunbarinodusi/Desktop/lora_project_pic1.png)
 
+---
 ## Overview
 
 This project implements a long-range communication system using LoRa (Long Range) technology with an ESP32 microcontroller. It provides functionalities for transmitting and receiving data over a significant distance. It aims to establish a robust telemetry communication system for drones, allowing for the seamless transmission of critical flight data between the drone and a ground control station (GCS). Unlike the original concept, which involved a Raspberry Pi for telemetry, this implementation utilizes two ESP32 Wi-Fi LoRa boards. One board manages the reception and transmission of telemetry data directly from the flight controller's serial port, while the second board handles the parsing and transmission of received packets to the GCS via TCP.
@@ -97,12 +98,14 @@ The LoRa Drone Communication System consists of the following key components:
 - ESP32 core for Arduino
 - LoRa library for ESP32
 
+---
 ## Installation
 
 1. Clone or download this repository.
 2. Set up your development environment with the necessary software and hardware components.
 3. Open the project in your preferred C++ development environment.
 
+---
 ## Usage
 
 1. Connect the ESP32 and LoRa module according to the provided pin mappings.
@@ -110,6 +113,7 @@ The LoRa Drone Communication System consists of the following key components:
 3. Open the serial monitor to interact with the device.
 4. Follow the instructions in the serial monitor for further usage.
 
+---
 ## Configuration
 
 - `LRA_IRQ`, `LRA_NSEL`, `BUSY_PIN`, and other pin configurations can be adjusted in `setup()` for your specific hardware setup.
@@ -130,26 +134,6 @@ For support, bug reporting, or feature requests, please open an issue on the pro
 
 
 
-
-
-## Getting Started
-
-To set up and deploy the LoRa Drone Communication System, follow these steps:
-
-1. **Hardware Configuration**:
-   - Assemble the necessary components including LoRa modules, MCUs, and antennas on both the drone and GCS.
-
-2. **Firmware Installation**:
-   - Flash the appropriate firmware onto the MCUs to initialize the LoRa modules and establish communication protocols.
-
-3. **Ground Control Station Setup**:
-   - Install the GCS software on a compatible device and configure the interface to establish communication with the drone.
-
-4. **Testing and Calibration**:
-   - Conduct extensive testing to verify the communication range, data integrity, and responsiveness of the system. Calibrate antennas and parameters as needed.
-
-5. **Integration with Drone Systems**:
-   - Integrate the LoRa communication system with the existing drone hardware and software to ensure seamless operation.
 
 
 
