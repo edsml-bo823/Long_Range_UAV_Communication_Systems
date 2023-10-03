@@ -118,6 +118,8 @@ The LoRa Drone Communication System consists of the following key components:
 
 - `LRA_IRQ`, `LRA_NSEL`, `BUSY_PIN`, and other pin configurations can be adjusted in `setup()` for your specific hardware setup.
 
+---
+
 ## Contributions and Support
 
 Contributions to the LoRa Drone Communication System project are welcome! If you'd like to contribute, please follow the guidelines outlined in the `CONTRIBUTING.md` file.
