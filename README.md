@@ -4,7 +4,11 @@
 
 ## Overview
 
-This project implements a long-range communication system using LoRa (Long Range) technology with an ESP32 microcontroller. It provides functionalities for transmitting and receiving data over a significant distance.
+This project implements a long-range communication system using LoRa (Long Range) technology with an ESP32 microcontroller. It provides functionalities for transmitting and receiving data over a significant distance. It aims to establish a robust telemetry communication system for drones, allowing for the seamless transmission of critical flight data between the drone and a ground control station (GCS). Unlike the original concept, which involved a Raspberry Pi for telemetry, this implementation utilizes two ESP32 Wi-Fi LoRa boards. One board manages the reception and transmission of telemetry data directly from the flight controller's serial port, while the second board handles the parsing and transmission of received packets to the GCS via TCP.
+
+While this setup provides reliable telemetry data exchange, it does impose limitations. Due to LoRa's relatively low bandwidth, real-time control of the drone using a joystick or dynamic mission uploads isn't feasible. The constrained bandwidth would struggle to accommodate the size of data packets required for such operations. Consequently, the system is optimized for pre-planned missions, with essential flight parameters like GPS position relayed to the GCS.
+
+In the event of a critical incident, this setup may necessitate a passive observer role, as the ability to take control manually would be restricted. Despite these limitations, this project sheds light on the significance of diverse drone communication systems, including LoRa, LoRaWAN, lpWAN, telemetry, and cellular technologies. These systems play a pivotal role in ensuring effective drone operation and data transmission, crucial for various applications ranging from commercial photography and package deliveries to military operations.
 
 ## Table of Contents
 
